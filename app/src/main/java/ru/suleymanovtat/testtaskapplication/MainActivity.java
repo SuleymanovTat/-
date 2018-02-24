@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (isTextValid()) {
-//            showMessage(edText.getText().toString());
+            showMessage(edText.getText().toString());
             Intent intentMessage = new Intent(this, SecondActivity.class);
             intentMessage.putExtra(SecondActivity.MESSAGE_KEY, edText.getText().toString());
             startActivity(intentMessage);

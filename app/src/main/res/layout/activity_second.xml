@@ -3,10 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
     tools:context="ru.suleymanovtat.testtaskapplication.SecondActivity">
 
     <TextView
-        android:id="@+id/tvShowText"
+        android:id="@+id/tvShowMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -15,11 +16,12 @@
         android:text="@string/show_text" />
 
     <Button
+        android:id="@+id/btnSearchInternet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/tvShowText"
-        android:layout_alignStart="@+id/tvShowText"
-        android:layout_below="@+id/tvShowText"
-        android:text="@string/button"
+        android:layout_alignEnd="@+id/tvShowMessage"
+        android:layout_alignStart="@+id/tvShowMessage"
+        android:layout_below="@+id/tvShowMessage"
+        android:text="@string/search_the_internet"
         android:textAllCaps="false" />
 </RelativeLayout>
